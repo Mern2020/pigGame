@@ -51,6 +51,21 @@ diceDOM.src = 'dice-' + dice + '.png';
         document.querySelector(".dice").style.display = 'none';
     }
 
+    
+
 });
+
+document.querySelector('.btn-hold').addEventListener('click', function() {
+// we want to store round score inside 
+// score and switch players
+    scores[activePlayer] += roundScore;
+    document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer]
+
+    // check if player won the game
+
+}
+
+
+)
 
 
